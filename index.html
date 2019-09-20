@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>UZB websit | Welcome</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="wdith=device-wdith">
+	<meta name="author" content="Ejekwu Graveth Uzoma">
+	<link rel="stylesheet" type="text/css" href="css/main-style.css">
+	<script type="text/javascript" src="js/qiz.js"></script>
+	<script type="text/javascript" src="jquery-3.3.1.js"></script>
+
+	<script type="text/javascript">
+/*Modification of text box marquee by Dave Methvin,
+Windows Magazine */
+ var scroll_speed = 800; // 200 milliseconds
+var chars = 1;
+var divElement;
+window.onload=function() {
+divElement=document.getElementById("newsletter");
+}
+ function scroller() {
+ window.setTimeout('scroller()',scroll_speed);
+ var msg=divElement.lastChild.nodeValue;
+ divElement.lastChild.nodeValue = msg.substring(chars)
++ msg.substring(0,chars);
+}
+ scroller();
+</script>
+</head>
+<body>
+<header>
+	<div class="container">
+		
+		<div id="branding">
+			<h1><span class="highlight">UZB</span> Web site</h1>
+		</div>
+		<nav>
+			<ul>
+				<li><a class="current" href="layout.html">Home</a></li>
+				<li><a href="about.html">About</a></li>
+				<li><a href="services.html">Services</a></li>
+				<li><a href="log.html">Login</a></li>
+				<li><a href="register.html">Register</a></li>
+			</ul>
+		</nav>
+
+	 </div>
+</header>
+<section id="showcase">
+	
+	<div class="container">
+		<h1>Great web developer</h1>
+		<p>HTML5 is designed, as much as possible, to be backward compatible with existing web
+browsers. Its new features have been built on existing features and allow you to provide
+fallback content for older browsers.
+It is suggested to detect support for individual HTML5 features using a few lines of JavaScript.
+If you are not familiar with any previous version of HTML, I would recommend that you go
+through our HTML Tutorial before exploring the features of HTML5.</p>	
+
+	</div>
+
+</section>
+<section id="newsletter">
+	<div class="container">
+		<h1>Subscribe to our newsletter</h1>
+		<form method="post" action="">
+			<input type="email" name="email" placeholder="enter email">
+			<button type="submit" name="sub_btn" class="button_1" >Subscribe</button>
+
+		</form>
+	</div>
+</section>
+<section id="slideshow">
+	<div id="container">
+		<iframe src="qiz.html" ></iframe>
+		<div>
+	<h1>Quiz Result will be displayed here</h1>
+	<p id="quizResults"> </p>
+</div>
+		<div id="show">
+			<h1>Lorem ipsum dolor sit amet</h1>
+			
+		</div>
+	</div>
+
+</section>
+<section id="boxes"> 
+<div class="container">
+	<div class="box">
+		<img src="img/html5.png" alt="html5">
+		<h1>HTML5</h1>
+		<p>Lorem ipsum dolor sit amet, a porttitor nullam tincidunt ornare eget, ab sit vestibulum, fringilla dolor doloribus ipsum netus turpis, dolor sagittis viverra nisl. Neque vitae adipiscing justo sed dolor cras. Vulputate phasellus, sed venenatis lobortis, non torquent est bibendum, dui scelerisque nibh sed, lacus ac ipsum curae lorem ipsum</p>
+
+		
+	</div>
+	<div class="box">
+		<img src="img/css.png" alt="html5">
+		<h1>CSS styling</h1>
+		<p>Lorem ipsum dolor sit amet, a porttitor nullam tincidunt ornare eget, ab sit vestibulum, fringilla dolor doloribus ipsum netus turpis, dolor sagittis viverra nisl. Neque vitae adipiscing justo sed dolor cras. Vulputate phasellus, sed venenatis lobortis, non torquent est bibendum, dui scelerisque nibh sed, lacus ac ipsum curae lorem ipsum </p>
+
+		
+	</div>
+	<div class="box">
+		<img src="img/graphics.jpg" alt="Graphics" height="90px">
+		<h1>CSS styling</h1>
+		<p>Lorem ipsum dolor sit amet, a porttitor nullam tincidunt ornare eget, ab sit vestibulum, fringilla dolor doloribus ipsum netus turpis, dolor sagittis viverra nisl. Neque vitae adipiscing justo sed dolor cras. Vulputate phasellus, sed venenatis lobortis, non torquent est bibendum, dui scelerisque nibh sed, lacus ac ipsum curae lorem ipsum </p>
+		
+	</div>
+</div>
+
+
+<footer>
+	
+	<div class="contain">
+	<div class="col">
+		<h1>CSS styling</h1>
+		<p>Lorem ipsum dolor sit amet, a porttitor nullam tincidunt ornare eget, ab sit vestibulum, fringilla dolor doloribus ipsum netus turpis, dolor sagittis viverra nisl. Neque vitae adipiscing justo sed dolor cras. Vulputate phasellus, sed venenatis lobortis, non torquent est bibendum, dui scelerisque nibh sed, lacus ac ipsum curae lorem ipsum </p>
+
+		
+	</div>
+	<div class="col">
+		<h1>CSS styling</h1>
+		<p>Lorem ipsum dolor sit amet, a porttitor nullam tincidunt ornare eget, ab sit vestibulum, fringilla dolor doloribus ipsum netus turpis, dolor sagittis viverra nisl. Neque vitae adipiscing justo sed dolor cras. Vulputate phasellus, sed venenatis lobortis, non torquent est bibendum, dui scelerisque nibh sed, lacus ac ipsum curae lorem ipsum </p>
+
+		
+	</div>
+	<div class="col">
+		<h1>CSS styling</h1>
+		<p>Lorem ipsum dolor sit amet, a porttitor nullam tincidunt ornare eget, ab sit vestibulum, fringilla dolor doloribus ipsum netus turpis, dolor sagittis viverra nisl. Neque vitae adipiscing justo sed dolor cras. Vulputate phasellus, sed venenatis lobortis, non torquent est bibendum, dui scelerisque nibh sed, lacus ac ipsum curae lorem ipsum </p>
+
+		</div>
+	</div>
+<p class="line"></p>
+<center>UZB web design, copyright &copy 2018</center>
+</footer>
+
+
+
+<script type="text/javascript">
+		$('#show').append('<p>Dolor donec eros aliquet tellus, aliquam sed ac, mauris nunc, mus mauris nunc quam, elit est euismod eu. Erat nunc ligula amet nec, id culpa augue fringilla a, vestibulum ligula suspendisse ac luctus tellus libero, libero non. Et quam vehicula neque, justo mollis a urna justo leo urna, auctor ullamcorper at. Id mi accumsan lorem, luctus ipsum luctus eget a tempor, repellat in commodo semper. Fusce nec leo amet, mi enim. Aliquam nibh ipsum convallis pellentesque cras, mollis in nam commodo tortor et diam, ut nibh facilisis. Eleifend quis eu primis lacinia dignissim, et nulla eu at, amet quisque blandit at. Faucibus donec ipsum sem venenatis sodales, id laoreet sint mi tortor, consectetuer maecenas pharetra sit, aliquam mauris consequat.</p>');
+
+
+
+	</script>
+</body>
+</html>

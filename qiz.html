@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>UZB Website | Quiz</title>
+	<link rel="stylesheet" type="text/css" href="css/main-style.css"/>
+</head>
+<body >
+	<div class="container">
+		<div class="wrap">
+<script type="text/javascript">
+	var score = 0;
+var questions =[
+
+				[' How many moon does the earth has? ', 1],
+				[' How many moon does the saturn has?', 31],
+				[' How many moon does the Veuns has? ', 0],
+				[' Which conurty was the first to go to the moon? ', 'American'],
+				[' Did they successed? ', 'Yes']
+
+
+				];
+
+
+function doQuiz(){				
+for (var i=0; i<questions.length; i++) {
+	askQuestion(questions[i]);	
+}
+var message = ' You got ' + score;
+message += ' Out of ' + questions.length;
+message+= ' questions correct ';
+
+var resultArea = document.getElementById('quizResults');
+resultArea.innerHTML =message;
+}
+	function askQuestion(question){
+		var answer = prompt(question[0], '');
+		if(answer == question[1]){
+			alert('Correct!');
+			score++;	
+		}else{
+			alert('Sorry. The Correct answer is ' + question[1]);
+		}
+		
+	}
+
+</script>
+
+<div>
+	<h3>Your Score will be displayed here</h3>
+	<p id="quizResults"> </p>
+	<button type="submit" value="Start Quiz" onclick="doQuiz();" class="button_2">Start Quiz</button>
+</div>
+</div>
+</div>
+</body>
+</html>
